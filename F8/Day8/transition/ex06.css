@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    color: green;
+    position: relative;
+    height: 27px;
+    overflow: hidden;
+}
+.title span{
+    position: absolute;
+    color: red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: top 0.5s ease;
+    overflow: hidden;
+}
+.title span i{
+    position: absolute;
+    font-style: normal;
+    bottom: 0;
+}
+.title:hover span{
+    top: 0;
+}
+
+ 

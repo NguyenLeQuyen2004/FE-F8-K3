@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="name">Họ tên</label>
+            <input type="text" name="name" placeholder="Họ tên" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" placeholder="password" id="password" required>
+        </div>
+        <div>
+            <label for="age">Tuổi</label>
+            <!-- step tăng đơn vị  -->
+            <input type="number" name="age" placeholder="Age" id="age" min="18" max="50" step="0.5" required>
+        </div>
+        <div>
+            <label for="avatar">Avatar</label>
+            <input type="file" name="avatar" id="avatar" required>
+        </div>
+        <div>
+            <label>Nguồn</label>
+            <label> <input type="checkbox" name="source" value="0"> Không biết </label>
+            <label> <input type="checkbox" name="source" value="1" checked> Facebook </label>
+            <label> <input type="checkbox" name="source" value="2"> Instagram </label>
+        </div>
+
+        <div>
+            <label for="message">Tin nhắn</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Nhập tin nhắn">Wellcome to F8</textarea>
+        </div>
+
+        <div>
+            <label for="provinces">Tỉnh/Thành phố</label>
+            <select name="provices" id="provinces" multiple>
+                <option value="">Chọn tỉnh/ thành phố</option>
+                <option value="1" selected>Hà Nội</option>
+                <optgroup label="Miền trung">
+                <option value="2">Hà Giang</option>
+                <option value="3">Yên Bái</option>
+                </optgroup>
+                <optgroup label="Miền Nam">
+                <option value="4">Phú Thọ</option>
+                <option value="5">HCM</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- <div contenteditable="true" 
+            style="height: 200px; border: 1px solid black;">
+        </div> -->
+        <button type="submit" style="padding: 0 20px;">Đăng ký</button>
+        <!-- <button type="button">Button</button> -->
+        <!-- <button type="reset">Nhập lại</button> -->
+    </form>
+</body>
+
+</html>

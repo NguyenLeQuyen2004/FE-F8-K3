@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h2 ~ ul, h2 ~ div ul{
+            color: red;
+            
+        } */
+        /* h2 ~ div ul{
+            color: green;
+        } */
+
+        /* selector1, selector2, ...{
+
+        } */
+        /* .products p + h2 , .products p + h2 + h2 {
+            color: red;
+        } */
+        /* .products h2 + h2{
+            color: red;
+        } */
+        .todos input:checked ~ span{
+            color: red;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+
+    <h2>F8</h2>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+
+    <h2>F8</h2>
+   <div class="Item">
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+   </div> -->
+   <!-- <div class="products">
+    <h1>Sản phẩm</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt molestiae eius quos ipsa unde repudiandae perspiciatis numquam rerum recusandae vel omnis possimus, ipsum minus accusantium cum debitis, blanditiis maiores?</p>
+        <h2>Sản phẩm 1</h2>
+        <h2>Sản phẩm 2</h2>
+        <h2>Sản phẩm 3</h2>
+    </div> -->
+
+    <div class="todos">
+        <div>
+            <label>
+                <input type="checkbox">
+                <span>Công việc 1</span>
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox">
+                <span>Công việc 2</span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>

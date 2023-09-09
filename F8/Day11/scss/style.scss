@@ -1,0 +1,22 @@
+@import 'parts/variables'; //khai báo biến
+@import 'parts/reset'; //nạp fonts
+@import 'parts/mixin'; //reset CSS
+@import 'parts/base'; //Định nghĩa các class hay dùng
+
+//import layout
+@import 'layouts/header'; //header
+@import 'layouts/breadcrumbs'; //breadcrumbs
+@import 'layouts/footer'; //footer
+
+//import pages
+
+//1. home
+@import 'pages/home/slide';
+@import 'pages/home/hero';
+@import 'pages/home/products';
+
+//2. About
+@import 'pages/about/title';
+@import 'pages/about/content';
+@import 'pages/about/testimonials';
+

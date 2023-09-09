@@ -1,0 +1,57 @@
+/*
+Pseodo Element = Thành phần giả
+
+cú pháp 
+
+selector::pseodo {
+    
+}
+
+a::before{
+
+}
+*/
+
+.title::before{
+    content: 'A';
+}
+
+.title::after{
+    content: 'B';
+}
+
+.page-title::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 4px;
+    background: red;
+    transition: all 0.4s linear;
+}
+
+.page-title:hover::after{
+    width: 50px;
+}
+
+.content p::first-line{
+    color: red;
+}
+
+.content p::first-letter{
+    font-size: 3rem;
+    font-style: italic;
+    color: rgb(95, 33, 219);
+}
+
+.content p::selection{
+    background: black;
+    color: blueviolet;
+}
+
+.email {
+    color: red;
+}
+
+.email::placeholder{
+    color: rgb(241, 234, 234);
+}

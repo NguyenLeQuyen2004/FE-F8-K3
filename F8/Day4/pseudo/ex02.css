@@ -1,0 +1,33 @@
+/* 
+Pseodo Classes
+
+selector:speodo {
+    
+    
+}*/
+
+.title:hover{
+    color: red;
+}
+.btn:hover{
+    color: red;
+}
+.btn:active{
+    color: green;
+}
+.btn:focus{
+    color: green;
+
+    background-color: yellow;
+}
+
+.field-item:focus{
+    background: blue;
+}
+
+.text:focus{
+    color: red;
+}
+.field-item:focus::placeholder{
+    color: black;
+}

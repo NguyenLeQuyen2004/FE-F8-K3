@@ -1,0 +1,10 @@
+@import "parts/variables";
+@import "parts/reset";
+@import "parts/fonts";
+@import "parts/mixin";
+@import "parts/base";
+//layouts
+@import "layouts/header";
+@import "layouts/footer";
+//pages
+@import "pages/home/hero";

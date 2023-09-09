@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    color: var(--primary-color);
+}
+
+.box h2{
+    color: var(--secondary-color);
+    border: 5px solid var(--border-color);
+}
+
+.box h2:hover {
+    --border-color: green;
+    --secondary-color: red;
+}
+.box p{
+    color: var(--primary-color);
+}
+:root {
+    --primary-color: red;
+    --secondary-color: green;
+    --font-size: 20px;
+    --border-color: rgb(47, 0, 255);
+
+}
+
+/* Biến trong css
+- lưu trữ các giá trị thuộc tính
+- Chỉ cần thay đổi 1 chố => Các thuộc tính được gọi từ biến sẽ thay đổi theo 
+
+
+1. biến toàn cục (Global Variables)
+  sử dụng khắp mọi nơi
+
+
+2. biến cục bộ ( Local Variables)
+
+-- khai báo biến
+:root {
+    --primary-color: green;
+}
+*/

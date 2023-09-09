@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "lob";
+    src: url(./Lobster/Lobster-Regular.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "lato";
+    src: url(./Lato/Lato-Black.ttf);
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; */
+
+}
+
+.field-group{
+    width: 600px;
+    position: relative;
+}
+.input-field{
+    width: 100%;
+    outline: 0;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 60px;
+    background: transparent;
+    color: #999999;
+}
+.input-field::placeholder{
+    color: #999999;
+}
+
+
+.input-field:focus{
+    color: #ffffff;
+    border-color: #110f0f;
+}
+
+
+.content h1{
+    font-family: "lob";
+    margin: 20px;
+}
+.content p span{
+    color: red;
+}
+.content p{
+    margin: 10px;
+}
+/* .field-group form input {
+   margin: 10px;
+   width: 420px;
+   height: 30px;
+} */
+input[type="text"] {
+    margin: 10px;
+    background-color: white;
+    background-image: url(../images/user.png);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    background-position-x: left;
+    width: 50%;
+}
+input[type="email"] {
+    margin: 10px;
+    background-color: white;
+    background-image: url(../images/email.png);
+    background-size: 37px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    background-position-x: left;
+    width: 50%;
+}
+input[type="phonenumber"] {
+    margin: 10px;
+    background-color: white;
+    background-image: url(../images/phone.png);
+    background-size: 37px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    background-position-x: left;
+    width: 50%;
+}
+input[type="number"] {
+    margin: 10px;
+    background-color: white;
+    background-image: url(../images/subject.png);
+    background-size: 37px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    background-position-x: left;
+    width: 50%;
+}
+
+select {
+    background-color: white;
+    background-image: url(../images/subject.png);
+    background-size: 37px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    background-position-x: left;
+    width: 50%;
+    margin: 10px;
+}
+textarea {
+    background-color: white;
+    background-image: url(../images/message.png);
+    background-size: 37px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    padding: 4px 50px;
+    background-position-x: left;
+    width: 50%;
+    margin: 10px;
+}
+
+.checkbox {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width:70%;
+    position: relative;
+}
+.checkbox span {
+    color: #575151;
+    margin: 20px;
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    width: 30px;
+    height: 20px;
+}
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 11.5px 20px;
+    background-color: #ff691c;
+    border: none;
+    color: white;
+}

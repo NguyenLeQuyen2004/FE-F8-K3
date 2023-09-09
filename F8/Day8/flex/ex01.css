@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    /* overflow: auto; */
+}
+
+.item{
+   
+    color: #fff;
+    background: green;
+   padding: 10px 20px;
+    border: 1px solid #fff;
+    /* flex-shrink: 0; */
+    /* flex-basis: 200px; */
+    /* max-width: 100px; */
+    flex: 1 1 100px;
+}
+/* .item:nth-child(3){
+    padding: 20px;
+    align-self: baseline;
+}
+.item:nth-child(4){
+    align-self: baseline;
+} */
+/* item 2 => item 1 => item4 => item 3 */
+.item:nth-child(1){
+    order: 2;
+}
+.item:nth-child(2){
+    order: 1;
+}
+.item:nth-child(3){
+    order: 4;
+}
+.item:nth-child(4){
+    order: 3;
+}
+.item:nth-child(5){
+    order: 0;
+}
+/* .item:nth-child(2){
+    padding: 20px;
+    flex-grow: 2;
+} */
+/* .item:nth-child(3){
+    
+} */
+/* flex-grow: Dãn các item  */
+/* flex-shrink: tự động co lại các item */
+/* flex-basis:  thiết lập kích thước ban đầu cho các item và flex-basis sẽ bị chặn bởi max-width, min-width */
+/* flex: grow, shrink, basis */
+/* align-selft: căn chỉnh item */
+/* order: sắp xếp các thứ tự item, nhận số nguyên */

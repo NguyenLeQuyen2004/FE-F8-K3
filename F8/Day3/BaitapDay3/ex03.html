@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 3px solid rgb(19, 238, 19);
+            width: 500px;
+            margin: auto;
+          }
+
+          .group-input {
+            padding: 15px;
+          }
+
+          .group-input .role-list {
+            float: left;
+          }
+
+          .list-options {
+            float: left;
+            margin-left: 20px;
+          }
+
+          .role,
+          .option {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+          .form-btns {
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          .submit-btn,
+          .reset-btn {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            background-color: rgb(19, 238, 19);
+            color: #fff;
+            cursor: pointer;
+          }
+
+          .submit-btn:hover,
+          .reset-btn:hover {
+            background-color: #fff;
+            color: rgb(19, 238, 19);
+            border: 1px solid rgb(19, 238, 19);
+          }
+
+    </style>
+</head>
+<body align="center">
+        <div class="group-input">
+            <label>Username : </label>
+            <input type="text" id="Username" />
+        </div>
+        <div class="group-input">
+            <label>Password : </label>
+            <input type="text" id="password">
+        <div class="group-input">
+            <label>City of employment : </label>
+            <input type="text" id="city">
+        <div class="group-input">
+            <label>Web sever : </label>
+            <select id="choose a sever" >
+                <option></option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Yên Bái</option>
+                <option value="2">Phú Thọ</option>
+            </select>
+        </div>
+        <div class="group-input">
+          <label for="">Please specify your role</label>
+          <div class="role-list">
+              <div class="role">
+                  <input type="radio" name="role" value="Admin">
+                  <span>Admin</span>
+              </div>
+              <div class="role">
+                  <input type="radio" name="role" value="Engineer">
+                  <span>Engineer</span>
+              </div>
+              <div class="role">
+                  <input type="radio" name="role" value="Manager">
+                  <span>Manager</span>
+              </div>
+              <div class="role">
+                  <input type="radio" name="role" value="Guest">
+                  <span>Guest</span>
+              </div>
+          </div>
+      </div>
+      <div class="group-input">
+        <label for="">Single Sign-on to the following:</label>
+        <div class="list-options">
+            <div class="option">
+                <input type="checkbox" name="relogin" value="Mail">
+                <span>Mail</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="relogin" value="Payroll">
+                <span>Payroll</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="relogin" value="Self-service">
+                <span>Self-service</span>
+            </div>
+        </div>
+    </div>
+        <hr>
+        <div class="form-btns">
+          <button type="submit" class="submit-btn">Login</button>
+          <button type="reset" class="reset-btn">Reset</button>
+      </div>
+</body>
+</html>

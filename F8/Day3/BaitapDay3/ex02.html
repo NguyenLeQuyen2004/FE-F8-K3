@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        h1{
+          text-align: center;
+        }
+        .hang1{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 5px;
+        }
+        .hang2{
+          display: flex;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 5px;
+        }
+        .item{
+          margin-top: 20px;
+          overflow: hidden;
+        }
+
+        .item img{
+          float: left; 
+          width: 30%;
+          margin-right: 20px;
+        }
+
+        .item blockquote {
+          font-style: italic;
+          font-size: 18px;
+          line-height: 1.5;
+          /* margin-top: 10px; */
+          overflow: hidden;
+        }
+        .item blockquote p{
+          margin-top: -5px;
+        }
+        .item blockquote cite{
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <h1>WHAT OUR CLIENTS SAY</h1> 
+   <div class="container">
+   <div class="hang1">
+    <div class="item">
+      <div class="thumb">
+          <img src="images/monk-555391_1920.jpg" alt="">
+          <blockquote>
+          <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+          <cite>Albert Einstein</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="item">
+      <div class="thumb">
+          <img src="images/monk-555391_1920.jpg" alt="">
+          <blockquote>
+          <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+          <cite>Albert Einstein</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="item">
+      <div class="thumb">
+          <img src="images/monk-555391_1920.jpg" alt="">
+          <blockquote>
+          <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+          <cite>Albert Einstein</cite>
+        </blockquote>
+      </div>
+    </div>
+   </div>
+
+    <!-- hàng 2 -->
+    <div class="hang2">
+      <div class="item">
+        <div class="thumb">
+            <img src="images/monk-555391_1920.jpg" alt="">
+            <blockquote>
+            <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+            <cite>Albert Einstein</cite>
+          </blockquote>
+        </div>
+      </div>
+      <div class="item">
+        <div class="thumb">
+            <img src="images/monk-555391_1920.jpg" alt="">
+            <blockquote>
+            <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+            <cite>Albert Einstein</cite>
+          </blockquote>
+        </div>
+      </div>
+      <div class="item">
+        <div class="thumb">
+            <img src="images/monk-555391_1920.jpg" alt="">
+            <blockquote>
+            <p>"Life is like riding a bicycle. To keep your balance, you must keep moving."</p>
+            <cite>Albert Einstein</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

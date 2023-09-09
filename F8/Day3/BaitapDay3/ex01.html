@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'roboto';
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+            }
+
+            .contact {
+                width: 1200px;
+                margin: 40px auto;
+            }
+
+            .contact__title {
+                position: relative;
+                font-weight: normal;
+            }
+
+            .contact__title::after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 50px;
+                height: 2px;
+                background-color: orange;
+                bottom: -0.5em;
+                left: 0;
+            }
+
+            .contact__content {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            /* Contact Info */
+            .info {
+                width: 20%;
+            }
+
+            .info .item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                color: #999;
+                line-height: 1.3;
+                margin-top: 20px;
+            }
+
+            .info .item img {
+                width: 30px;
+            }
+
+            /* Form Block */
+            .form-block {
+                width: 70%;
+            }
+
+            #contact__form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            #contact__form input {
+                height: 35px;
+                box-sizing: border-box;
+                padding-left: 10px;
+            }
+
+            textarea {
+                box-sizing: border-box;
+                padding: 10px;
+            }
+
+            .submit-btn {
+                width: 130px;
+                height: 35px;
+                background-color: #0bb7b5;
+                border: none;
+                color: #fff;
+            }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <h1 class="contact__title">CONTACT US</h1>
+        <div class="contact__content">
+            <article class="info">
+                <h2 class="info__title">Contact Info</h2>
+                <div class="info__items">
+                    <div class="item">
+                        <img src="images/address.png" alt="">
+                        <span>321 Awesome Street New York, NY 17022</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/box.png" alt="">
+                        <span>info@companyname.com</span>
+                    </div>
+                    <div class="item">
+                        <img src="images/phone.png" alt="">
+                        <span>+1 800 123 1234</span>
+                    </div>
+                </div>
+            </article>
+            <article class="form-block">
+                <h2 class="form-block__title">Having Any Query! Or Book an appointment</h2>
+                <form action="https://api-gateway.fullstack.edu.vn/action_page.php" id="contact__form" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                    <button class="submit-btn" type="submit">Send Message</button>
+                </form>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

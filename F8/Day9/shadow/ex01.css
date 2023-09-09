@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background: green;
+    color: #fff;
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+    box-shadow: 10px 5px 10px 5px rgb(137, 195, 82);
+    text-shadow: 3px 3px 3px rgb(242, 11, 11);
+}
+
+/* box-shadow: đổ bóng cho khối
+box-shadow: x-offset y-offset blur spread color
++ x-offset: vị trí bóng theo trục X
++ y-offset: vị trí bóng theo trục Y
++ blur: độ nhòe của bóng
++ spread: kích thươc của bóng
++ color: màu của bóng 
+
+text-shadow: đổ bóng cho chữ
+text-shadow: x-offset y-offset blur color
+
+/* backgound gradient
+linear gradient
+radial gradient 
+responsive
+1. breakpoint là gì
+2. các breakpoint phổ biến
+3. phân biệt desktop first, mobile first
+4. media query css
+5. viết media query theo desktop first, mobie first
+6. nên dùng desktop hay mobile
+*/
+
+
+
+
+
+

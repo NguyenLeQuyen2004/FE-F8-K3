@@ -1,0 +1,36 @@
+/* dấu * dùng cho tất cả các thẻ trong html */
+/* * {
+    color: red;
+} */
+
+.title{
+    color: red;
+}
+#title{
+    color: green;
+}
+p{
+    border: 1px solid red;
+    color: gray;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: rgb(255, 196, 196);
+    height: 30px;
+}
+ul > li {
+    list-style: none;
+    color: rgb(255, 136, 0);
+}
+ul > li > a{
+    text-decoration: none;
+}
+
+h2#fisrt.title{
+    color: red;
+}
+h3#second.title{
+    color: blueviolet;
+}

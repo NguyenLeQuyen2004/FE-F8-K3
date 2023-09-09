@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container div {
+  width: 300px;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=ex04.css.map */

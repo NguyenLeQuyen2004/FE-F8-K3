@@ -1,0 +1,59 @@
+/* reset css */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 600;
+    display: none;
+}
+/* Mobile */
+@media screen and (max-width: 575px) {
+      
+}
+
+/* tablet */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+   .tablet{
+    display: block;
+   }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    .desktop{
+        display: block;
+    }
+}
+/* 
+Cho trc 3 <h2>, hãy xử lý để trên thiết bị nào thì <h2> tương ứng */
+/* ereponsive 
+1. media query
+2. breakpoints
+ */ 
+/* h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+ @media screen and (min-width: 500px) and (max-width: 700px) {
+    h1 {
+        color: red;
+    }
+ } */
+
+ /* 
+        breakpoints
+        - mobile: 0 - 575px 
+        - tablte: 576px - 991px
+        - desktop: > 992px
+        
+    */
+    

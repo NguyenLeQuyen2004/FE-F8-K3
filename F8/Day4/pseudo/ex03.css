@@ -1,0 +1,21 @@
+/* .products h1:not(.active):not(.ignore){
+    color: red;
+} */
+
+/* .products h2:first-of-type {
+    color: red;
+} */
+
+/* .products h2:last-child {
+    color: blue;
+} */
+/* .products h2:last-of-type{
+    color: blue;
+} */
+/* .products h2:nth-child(5n+5){
+    color: red;
+} */
+
+.products h2:nth-of-type(2n+2){
+    color: red;
+}

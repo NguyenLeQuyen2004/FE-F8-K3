@@ -1,0 +1,17 @@
+body{
+    font-family: system-ui;
+}
+
+nav {
+    display: flex;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    /* text-shadow: -1px -1px red; */
+}
+
+nav a:hover{
+    text-shadow: -0.3px -0.3px currentColor, 0.3px 0.3px currentColor;
+}

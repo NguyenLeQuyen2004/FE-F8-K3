@@ -1,0 +1,86 @@
+$primaryColor: green;
+$backgroundColor: red;
+.header{
+    padding: $primaryColor;
+    padding: 20px 0;
+    background: $backgroundColor;
+    .header-inner {
+        display: flex;
+        justify-content: center;
+
+        .logo{
+            max-width: 150px;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.menu {
+    background: green($color: #000000);
+   > ul {
+        list-style: none;
+        display: flex;
+        > li{
+           > a{
+                display: block;
+                text-decoration: none;
+                &:hover{
+                    background: red;
+                    &::after{
+                        content: '';
+                    }
+                }
+
+                &::before{
+                    content: '';
+                }
+            }
+            + li {
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+    ul{
+        &.topbar{
+            list-style: none;
+        }
+    }
+}
+$footerCopyrightSelector: ".copyright";
+.footer {
+    $property: background;
+    padding: 20px;
+    #{$footerCopyrightSelector} {
+        text-align: center;
+        #{$property}: #333;
+    }
+}
+
+// câu lệnh biên dịch SCSS sang CSS
+// 1. Biên dịch cả folder SCSS sang CSS
+// sass folder_scss:foldercss
+
+//Watch Move để thêm scss
+// sass folder_scss:foldercss --watch
+
+// biên dịch 1 file scss sang 1 file css
+// sass duong-dan-file-scss
+//duong-dan-file-css
+
+//nén file CSS từ file SCSS
+// => Tạo ra file .min(minify)
+// sass duong-dan-file-scss duong-dan-file-css  --style compressed
+
+// dấu & dùng để viết liền selector
+
+// coment scss //
+
+// biến trong scss
+// cứ pháp: $tenbien
+// nên đặt tên theo cú pháp camelCase
+//ví dụ: primaryColor: ;
+
+

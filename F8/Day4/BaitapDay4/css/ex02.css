@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Beba";
+    src: url(./BebasNeue-Regular.ttf);
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+}
+
+header span{
+    font-family: "Beba";
+    font-size: 30px;
+}
+header h1{
+    font-family: "roboto";
+    color: rgb(79, 26, 26);
+}
+main {
+    padding: 0 auto;
+    margin: 10px;
+}
+form{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    gap: 15px;
+}
+
+form input{
+    height: 50px;
+    font-family: "Beba";
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+form button{
+    background: rgb(119, 14, 14);
+    font-family: "roboto";
+    color: #fff;
+    border-radius: 8px;
+}
+form input::placeholder{
+    color: black;
+}

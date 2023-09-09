@@ -1,0 +1,20 @@
+<script>
+    Array.prototype.reduce2 = function (callback, thisArg) {
+        bienDem = 0
+        // Lặp qua từng phần tử của mảng
+        for (let i = 0; i < this.length; i++) {
+            // Gọi hàm callback trên từng phần tử của mảng
+            bienDem = callback(bienDem, this[i], i, this)
+        }
+
+        return bienDem
+    }
+
+    let numbers = [1, 2, 3, 4, 5];
+
+    let sum = numbers.reduce2((bienDem, bienHienTai) => {
+        return bienDem + bienHienTai;
+    }, 0);
+
+    console.log(sum); 
+</script>
